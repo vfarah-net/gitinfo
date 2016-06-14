@@ -50,3 +50,6 @@ git remote
 
 # show details about the remotes
 git remote -v
+
+# pull in the latest changes of your remote repository
+git pull
