@@ -1,0 +1,37 @@
+# initialize the Git repository
+# for the current directory
+git init
+
+# see the result
+git status
+
+# add all files to the index of the Git repository
+git add .
+
+# commit your file to the local repository
+git commit -m "Initial commit"
+
+# show the Git log for the change
+git log
+
+# remove unwanted changes from the working tree. Test02 was an existing file with changes in it
+git checkout test02
+
+# unwantedstaged.txt is not tracked by Git simply delete it
+rm unwantedfile.txt
+
+# amend the last commit comment or message
+git commit --amend -m "More changes - now correct"
+
+# Add a remote as the origin to where a repository was created
+git remote add origin https://github.com/vfarah-net/gitinfo.git
+# push all the local into the remote
+git push -u origin master
+
+# Clone into another folder will download all stuff needed
+git clone https://github.com/vfarah-net/gitinfo.git
+
+
+rename the existing remote repository from
+# gitinfo to gitinfo_testing
+git remote rename gitinfo gitinfo_testing
