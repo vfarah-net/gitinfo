@@ -53,3 +53,14 @@ git remote -v
 
 # pull in the latest changes of your remote repository
 git pull
+
+# lists all branches including the remote branches
+git branch -a
+
+# lists branches in the remote repositories
+git branch -r
+
+git branch branch-testing
+
+# switched to the branch testing
+git checkout branch-testing
