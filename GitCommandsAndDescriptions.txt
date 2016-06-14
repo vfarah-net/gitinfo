@@ -35,3 +35,18 @@ git clone https://github.com/vfarah-net/gitinfo.git
 rename the existing remote repository from
 # gitinfo to gitinfo_testing
 git remote rename gitinfo gitinfo_testing
+
+# commit
+git commit -a -m "This is a test for the new remote origin"
+
+# commit the changes to the remote
+git push origin
+
+# show the details of the remote repo called origin
+git remote show origin
+
+# show the existing defined remotes
+git remote
+
+# show details about the remotes
+git remote -v
